@@ -1,4 +1,5 @@
 import kotlin.math.PI
+import kotlin.math.pow
 
 fun main(){
 
@@ -7,8 +8,8 @@ fun main(){
     print("d= ")
     val d = readln().toDouble()
     val C = PI*d
-    val A = PI*d*d/4
+    val A = PI*d.pow(2)/4
 
-    println("\nA àrea A= $A m² e o Comprimento C=$C m")
+    println("\nA àrea A= ${"%.2f".format(A)} m² e o Comprimento C= ${"%.2f".format(C)} m")
 
 }
