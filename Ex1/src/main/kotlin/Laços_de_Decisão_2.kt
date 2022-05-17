@@ -17,9 +17,9 @@ fun main() {
     print("3º: ")
     val c:Double = readln().toDouble()
 
-    if (a>b && a>c) {
+    if (a>=b && a>=c) {
         p3 = a
-        if(b > c){
+        if(b >= c){
             p2 = b
             p1 = c
         }else{
@@ -28,9 +28,9 @@ fun main() {
         }
 
     }else
-        if(b > c) {
+        if(b >= c) {
             p3 = b
-            if(a > b){
+            if(a >= b){
                 p2 = a
                 p1 = c
             } else {
@@ -40,7 +40,7 @@ fun main() {
 
         }else{
             p3 = c
-            if(a > b){
+            if(a >= b){
                 p2 = a
                 p1 = b
             }else{
